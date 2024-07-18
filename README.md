@@ -11,7 +11,7 @@ This repository contains half cell measurement data and code (for plotting, simu
     - define the file paths ([paths.py](src/paths.py))
     - fit the full cell VQ curve with fresh half cell curve using differential voltage analysis ([DVF_functions.py](src/DVF_functions.py))
 - **[notebooks](notebooks)** contains notebooks to:
-    - generate the plots in the paper [Figure 1](notebooks/FP1_fig_1.ipynb), [Figure 2-3](notebooks/FP1_fig_2.ipynb), and [Figure 6](notebooks/FP1_fig_6.ipynb)
+    - generate the plots in the paper [Figure 1](notebooks/FP1_fig_1.ipynb), [Figure 2-3](notebooks/FP1_fig_2.ipynb), [Figure 4](notebooks/FP1_fig_4.ipynb), and [Figure 6](notebooks/FP1_fig_6.ipynb)
     - demonstration of how to simulate full cell curve from half cell data  ([halfcell_fitting_updated_2024_cleaned.ipynb](notebooks/halfcell_fitting_updated_2024_cleaned.ipynb))
     - prepare the half cell data for differential voltage analysis([PE_NE_curve_prep.ipynb](notebooks/PE_NE_curve_prep.ipynb))
 
