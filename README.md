@@ -15,4 +15,10 @@ This repository contains half cell measurement data and code (for plotting, simu
     - demonstration of how to simulate full cell curve from half cell data  ([halfcell_fitting_updated_2024_cleaned.ipynb](notebooks/halfcell_fitting_updated_2024_cleaned.ipynb))
     - prepare the half cell data for differential voltage analysis([PE_NE_curve_prep.ipynb](notebooks/PE_NE_curve_prep.ipynb))
 
-**Additional notes**: Please update the file path to run the code. The cycle summary extraction code is written based on the cycling data processed by TRI BEEP. 
+- **Additional notes**: 
+
+    - Please update the file path to run the code. The cycle summary extraction code is written based on the cycling data processed by TRI BEEP. 
+    - If you want to load in the structrued BEEP data and perform data analysis on your own, then you will need to use the auto_load_processed function 
+    ```python
+        from beep.structure.cli import auto_load_processed
+        sturcture = auto_load_processed(os.path.join(file_path, file))
