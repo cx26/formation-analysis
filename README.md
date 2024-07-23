@@ -9,17 +9,18 @@ This repository contains half cell measurement data and code (for plotting, simu
     - load in the necessary dataframes with cells that successfully reached end of life ([load_data.py](src/load_data.py))
     - extract the cycling summary information for each cell from the TRI BEEP processed cycling data ([nova_feature_helper_functions_commented.py](src/nova_feature_helper_functions_commented.py))
     - define the file paths ([paths.py](src/paths.py))
-    - fit the full cell VQ curve with fresh half cell curve using differential voltage analysis ([DVF_functions.py](src/DVF_functions.py))
+    - fit the full cell VQ curve with fresh half cell curves using differential voltage analysis ([DVF_functions.py](src/DVF_functions.py))
 - **[notebooks](notebooks)** contains notebooks to:
     - generate the plots in the paper [Figure 1](notebooks/FP1_fig_1.ipynb), [Figure 2-3](notebooks/FP1_fig_2.ipynb), [Figure 4](notebooks/FP1_fig_4.ipynb), and [Figure 6](notebooks/FP1_fig_6.ipynb)
-    - demonstration of how to simulate full cell curve from half cell data  ([halfcell_fitting_updated_2024_cleaned.ipynb](notebooks/halfcell_fitting_updated_2024_cleaned.ipynb))
-    - prepare the half cell data for differential voltage analysis([PE_NE_curve_prep.ipynb](notebooks/PE_NE_curve_prep.ipynb))
+    - demonstrate how to simulate full cell curve from half cell data ([halfcell_fitting_updated_2024_cleaned.ipynb](notebooks/halfcell_fitting_updated_2024_cleaned.ipynb))
+    - process the half cell data for differential voltage analysis ([PE_NE_curve_prep.ipynb](notebooks/PE_NE_curve_prep.ipynb))
 
 - **Additional notes**: 
 
-    - Please update the file path to run the code. The cycle summary extraction code is written based on the cycling data processed by TRI BEEP.
+    - Please update the file paths to run the code. The cycle summary extraction code is written based on the cycling data processed by TRI BEEP.
     - Some cells experienced failures during the testing process such as shorting or broken tabs, so we did not include those in the shared [dataset](https://data.matr.io/8/).
-    - If you want to load in the structrued BEEP data and perform data analysis on your own, then you will need to use the auto_load_processed function 
+    - If you want to load in the structrued BEEP data and perform data analysis on your own, then you will need to use the auto_load_processed function:
+      
     ```python
         from beep.structure.cli import auto_load_processed
         sturcture = auto_load_processed(os.path.join(file_path, file))
