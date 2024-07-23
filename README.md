@@ -1,6 +1,6 @@
 # ***Data-Driven Analysis of Battery Formation*** 
 
-This repository contains half cell measurement data and code (for plotting, simulation and experiment design) accompanying the paper *Data-Driven Analysis of Battery Formation Reveals the Role of Electrode Utilization in Extending Cycle Life* by Xiao Cui et al.(2024)  
+This repository contains half cell measurement data and code (for plotting, simulation and experiment design) accompanying the paper *Data-Driven Analysis of Battery Formation Reveals the Role of Electrode Utilization in Extending Cycle Life* by Xiao Cui et al (2024).  
 
 - **[data](data)**: 
     - extracted summary information from [aging cycles, diagnostic cycles](data/rpt_summary_041524.csv) and [formation cycles](data/formation_cycle_info_042124.csv); [resistances](data/delta_features_041524.csv); [electrode-specifics](data/electrode_info_04152024.csv) fitted using differential voltage analysis; [formation parameters](data/Formation_2022-Parameter.csv) for each cell; [cycle life](data/one_time_features_041524.csv).
