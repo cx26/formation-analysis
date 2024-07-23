@@ -17,7 +17,7 @@ This repository contains half cell measurement data and code (for plotting, simu
 
 - **Additional notes**: 
 
-    - Please update the file paths to run the code. The cycle summary extraction code is written based on the cycling data processed by TRI BEEP.
+    - Please update the file paths to run the code. The cycle summary extraction code is written based on the cycling data processed by [TRI BEEP](https://tri-amdd.github.io/beep/).
     - Some cells experienced failures during the testing process such as shorting or broken tabs, so we did not include those in the shared [dataset](https://data.matr.io/8/).
     - If you want to load in the structrued BEEP data and perform data analysis on your own, then you will need to use the auto_load_processed function:
       
