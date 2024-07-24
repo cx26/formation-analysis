@@ -3,4 +3,4 @@ matplotlib==3.8.0
 numpy==2.0.1
 pandas==2.2.2
 scipy==1.14.0
-beep 
+beep==2022.10.3.16 
